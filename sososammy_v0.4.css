@@ -1,12 +1,13 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
   
-  :root {
-    --white: hsla(0,0%,100%,1);
-    --pink: hsla(270,100%,80%,1);
-  }
-  header {
-      color: var(--white);
-      background-color: var(--pink);
-  }
+:root {
+  --white: hsla(0,0%,100%,1);
+  --pink: hsla(270,100%,80%,1);
+}
+
+header {
+  color: var(--white);
+  background-color: var(--pink);
+}
