@@ -149,7 +149,7 @@ button {
 /* For desktop */
 @media screen and (min-width: 992px) {
   body {
-    background-image: url(./images/pattern-background-desktop.svg);
+    background-image: url(pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
   }
