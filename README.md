@@ -4,7 +4,7 @@ Welcome! This is my GitHub Pages repository. In this repository I have my favori
 To visit the website for each of my projects, go to sososammy.github.io/name-of-the-html-file.html.
 
 ## Link to my Order Summary Component project
-[Order Summary Component Project](https://sososammy.github.io/order-summmary-component.html)
+[Order Summary Component Project](https://sososammy.github.io/order-summary-component.html)
 
 ## Link to SoSoSammy website version 0.4
 [SoSoSammy version 0.4](https://sososammy.github.io/sososammy_v0.4.html)
