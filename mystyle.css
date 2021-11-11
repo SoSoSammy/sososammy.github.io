@@ -18,7 +18,7 @@ img {
 
 body {
   background-color: var(--paleblue);
-  background-image: url(./images/pattern-background-mobile.svg);
+  background-image: url(pattern-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
   font-family: "Red Hat Display", sans-serif;
