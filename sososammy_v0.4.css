@@ -1,23 +1,11 @@
 * {
   box-sizing: border-box;
-<<<<<<< Updated upstream
-=======
   margin: 0;
   padding: 0;
->>>>>>> Stashed changes
 }
   
 :root {
   --white: hsla(0,0%,100%,1);
-<<<<<<< Updated upstream
-  --pink: hsla(270,100%,80%,1);
-}
-
-header {
-  color: var(--white);
-  background-color: var(--pink);
-}
-=======
   --purple: hsla(270,100%,80%,1);
   --lightpurple: rgb(213, 174, 253);
   --darkpurple: rgb(188, 122, 253);
@@ -63,4 +51,3 @@ footer {
   justify-content: space-around;
   align-items: center;
 } 
->>>>>>> Stashed changes
