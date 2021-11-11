@@ -1,9 +1,15 @@
 * {
   box-sizing: border-box;
+<<<<<<< Updated upstream
+=======
+  margin: 0;
+  padding: 0;
+>>>>>>> Stashed changes
 }
   
 :root {
   --white: hsla(0,0%,100%,1);
+<<<<<<< Updated upstream
   --pink: hsla(270,100%,80%,1);
 }
 
@@ -11,3 +17,50 @@ header {
   color: var(--white);
   background-color: var(--pink);
 }
+=======
+  --purple: hsla(270,100%,80%,1);
+  --lightpurple: rgb(213, 174, 253);
+  --darkpurple: rgb(188, 122, 253);
+  --verydarkpurple: rgb(159, 103, 214);
+}
+  
+header {
+  color: var(--white);
+  background-color: var(--purple);
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 10px 10px 10px var(--verydarkpurple);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: var(--darkpurple);
+  display: flex;
+}
+
+nav li {
+  flex: 1;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+  background-color: var(--lightpurple);
+}
+
+.active {
+  background-color: var(--white);
+}
+
+
+footer {
+  color: var(--white);
+  background-color: var(--purple);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} 
+>>>>>>> Stashed changes
