@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --pink: #ff6699;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--pink);
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+}
+
+header,
+footer {
+    background-color: var(--white);
+}
+
+footer {
+    font-family: "Glass Antiqua", cursive;
+    color: var(--pink);
+    font-size: 20px;
+}
+
+header img {
+    width: 400px;
+    height: auto;
+}
+
+h1 {
+    font-family: "Glass Antiqua", cursive;
+}
+
+
+.intro-img {
+    height: auto;
+    width: 500px;
+}
+
+
+
