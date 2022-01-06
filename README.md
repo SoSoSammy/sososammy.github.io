@@ -1,9 +1,10 @@
 # sososammy.github.io
-Welcome! This is my GitHub Pages repository. In this repository I have my favorite projects, as well as projects I am currently working on.
+WELCOME TO MY *OFFICIAL* SOSOSAMMY WEBSITE!
 
-To visit the website for each of my projects, go to sososammy.github.io/name-of-the-html-file.html.
+After no joke, like three months I finally figured out how to use GitHub pages. And, in honor of that, drum roll please... 🥁 🥁 🥁
 
-## Link to my Order Summary Component project
-[Order Summary Component Project](https://sososammy.github.io/order-summary-component.html)
+SoSoSammy version 0.4 is coming out! Wohoo! 🎊 🥳 🎊
 
-### Thanks for checking out my projects :)
+The link, sososammy.github.io is where I will be putting my website. (It's already up, but I am going to be making lots of changes, so keep on the lookout for that.)
+
+[My Github Pages Website](https://sososammy.github.io)
