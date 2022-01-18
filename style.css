@@ -1,3 +1,13 @@
+/* Table of Contents
+1. Global
+2. Colors, typography
+3. Layout
+4. Components
+  4.1 Links as buttons
+5. Media Queries
+*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -19,11 +29,18 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--pink);
     font-family: "Poppins", sans-serif;
+    font-size: 16px;
     height: 100vh;
 }
+
+
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -45,20 +62,22 @@ position: relative;
     color: var(--white);
 }
 
-.hero-text button {
+.hero-text .button {
     border: 2px solid var(--pink);
-    border-radius: 20px;
+    border-radius: 25px;
     outline: 0;
     display: inline-block;
-    padding: 10px;
+    padding: 10px 15px;
     color: var(--white);
     background-color: var(--pink);
+    font-size: 15px;
     text-align: center;
+    text-decoration: none;
     cursor: pointer;
     transition: 0.3s ease-out;
 }
 
-.hero-text button:hover {
+.hero-text .button:hover {
     background-color: transparent;
 }
 
@@ -80,7 +99,6 @@ nav a {
     transition: 0.3s ease-out;
 }
 
-
 nav a:hover {
     border-bottom: 3px solid var(--pink);
 }
@@ -94,10 +112,66 @@ footer {
     background-color: var(--black);
 }
 
+.projects {
+    padding: 10px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects article {
+    background-color: var(--white);
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 var(--black);
+    transition: 0.3s;
+}
+
+.projects article:hover {
+    box-shadow: 0 8px 16px 0 var(--black);
+}
+
+.projects .button {
+    border: 2px solid var(--pink);
+    border-radius: 25px;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    color: var(--black);
+    background-color: var(--pink);
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.projects .button:hover {
+    background-color: transparent;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding: 10px 15px 10px 0;
+}
+
+.about-me img {
+    width: 200px;
+    height: 200px;
+    padding: 0 10px;
+}
+
 footer {
     font-family: "Glass Antiqua", cursive;
     color: var(--pink);
     font-size: 20px;
+    padding: 20px;
 }
 
 header img {
@@ -114,5 +188,9 @@ h6 {
     font-family: "Glass Antiqua", cursive;
 }
 
-
+@media only screen and (min-width: 992px) {
+    .articles {
+        flex-direction: row;
+    }
+}
 
