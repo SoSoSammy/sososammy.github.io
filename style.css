@@ -1,16 +1,7 @@
-/* Table of Contents
-1. Global
-2. Colors, typography
-3. Layout
-4. Components
-  4.1 Links as buttons
-5. Media Queries
-*/
 
+/* ================================== Global ====================================  */
 
-@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+/* Variables */
 :root {
     --pink: #ff6699;
     --white: #ffffff;
@@ -40,7 +31,54 @@ body {
     height: 100vh;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Glass Antiqua", cursive;
+}
 
+/*  ======================================== Header ================================== */
+
+header {
+    background-color: var(--black);
+}
+
+header img {
+    width: 400px;
+    height: auto;
+}
+
+/* ================================= Navigation ================================= */
+nav {
+    background-color: var(--darkgray);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--pink);
+    display: block;
+    padding: 16px 14px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-out;
+}
+
+nav a:hover {
+    border-bottom: 3px solid var(--pink);
+}
+
+nav a.active {
+    border-bottom: 3px solid var(--pink);
+}
+
+/* =============================================== Hero =================================== */
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -81,36 +119,7 @@ position: relative;
     background-color: transparent;
 }
 
-nav {
-    background-color: var(--darkgray);
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--pink);
-    display: block;
-    padding: 16px 14px;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease-out;
-}
-
-nav a:hover {
-    border-bottom: 3px solid var(--pink);
-}
-
-nav a.active {
-    border-bottom: 3px solid var(--pink);
-}
-
-header,
-footer {
-    background-color: var(--black);
-}
+/* ==================================== Projects ============================== */
 
 .projects {
     padding: 10px;
@@ -119,6 +128,12 @@ footer {
 .articles {
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+    .articles {
+        flex-direction: row;
+    }
 }
 
 .projects article {
@@ -153,6 +168,8 @@ footer {
     background-color: transparent;
 }
 
+/* ============================= About Me ===================== */
+
 .about-me {
     display: flex;
     justify-content: center;
@@ -167,30 +184,13 @@ footer {
     padding: 0 10px;
 }
 
+/* ================================== Footer ============================ */
+
 footer {
+    background-color: var(--black);
     font-family: "Glass Antiqua", cursive;
     color: var(--pink);
     font-size: 20px;
     padding: 20px;
-}
-
-header img {
-    width: 400px;
-    height: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Glass Antiqua", cursive;
-}
-
-@media only screen and (min-width: 992px) {
-    .articles {
-        flex-direction: row;
-    }
 }
 
