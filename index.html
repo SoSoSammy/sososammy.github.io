@@ -5,24 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" href="images/logo/icononly_nobuffer.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Poppins&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo/icononly_nobuffer.png">
   <title>SoSoSammy</title>
 </head>
 
 <body>
+  <!-- ********************************* Header ***************************** -->
 
   <header>
     <img src="images/logo/fulllogo_transparent_nobuffer.png" alt="">
+
+    <nav>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about-me">About</a></li>
-    </ul>
-  </nav>
+  <!-- ********************************* Hero ********************************* -->
 
 
   <section class="hero-image">
@@ -33,50 +41,57 @@
     </div>
   </section>
 
+  <!-- ********************************** Projects **************************** -->
+
   <main>
     <section class="projects" id="projects">
-      <h2>My Projects</h2>
-      <p>Here are some of the projects I have created in Web Development.</p>
-      <div class="articles">
-        <article>
-          <h3>Order Summary Component</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis modi repudiandae obcaecati commodi
-            inventore,
-            quisquam, ex alias tenetur magnam minus provident facere, asperiores consequuntur ea beatae atque deserunt
-            distinctio aliquam?</p>
-          <a href="https://github.com/SoSoSammy/order-summary-component_frontendmentor" target="_blank"
-            class="button code-link">Check
-            out the code</a>
-          <a href="http://sososammy.com/order-summary-component_frontendmentor/" target="_blank"
-            class="button project-link">View the
-            project</a>
-        </article>
+      <div class="content-wrap">
+        <h2>My Projects</h2>
+        <p>Here are some of the projects I have created in Web Development.</p>
+        <div class="articles">
+          <article>
+            <h3>Order Summary Component</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis modi repudiandae obcaecati commodi
+              inventore,
+              quisquam, ex alias tenetur magnam minus provident facere, asperiores consequuntur ea beatae atque deserunt
+              distinctio aliquam?</p>
+            <a href="https://github.com/SoSoSammy/order-summary-component_frontendmentor" target="_blank"
+              class="button code-link">Check
+              out the code</a>
+            <a href="http://sososammy.com/order-summary-component_frontendmentor/" target="_blank"
+              class="button project-link">View the
+              project</a>
+          </article>
 
-        <article>
-          <h3>Stats Preview Card Component</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis modi repudiandae obcaecati commodi
-            inventore,
-            quisquam, ex alias tenetur magnam minus provident facere, asperiores consequuntur ea beatae atque deserunt
-            distinctio aliquam?</p>
-          <a href="https://github.com/SoSoSammy/stats-preview-card-component_frontendmentor" target="_blank"
-            class="button code-link">Check out the code</a>
-          <a href="http://sososammy.com/stats-preview-card-component_frontendmentor/" target="_blank"
-            class="button project-link">View the project</a>
-        </article>
+          <article>
+            <h3>Stats Preview Card Component</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis modi repudiandae obcaecati commodi
+              inventore,
+              quisquam, ex alias tenetur magnam minus provident facere, asperiores consequuntur ea beatae atque deserunt
+              distinctio aliquam?</p>
+            <a href="https://github.com/SoSoSammy/stats-preview-card-component_frontendmentor" target="_blank"
+              class="button code-link">Check out the code</a>
+            <a href="http://sososammy.com/stats-preview-card-component_frontendmentor/" target="_blank"
+              class="button project-link">View the project</a>
+          </article>
 
-        <article>
-          <h3>3-column Preview Card Component</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis modi repudiandae obcaecati commodi
-            inventore,
-            quisquam, ex alias tenetur magnam minus provident facere, asperiores consequuntur ea beatae atque deserunt
-            distinctio aliquam?</p>
-          <a href="https://github.com/SoSoSammy/3-column-preview-card-component_frontendmentor" target="_blank"
-            class="button code-link">Check out the code</a>
-          <a href="http://sososammy.com/3-column-preview-card-component_frontendmentor/" target="_blank"
-            class="button project-link">View the project</a>
-        </article>
-      </div>
-    </section>
+          <article>
+            <h3>3-column Preview Card Component</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis modi repudiandae obcaecati commodi
+              inventore,
+              quisquam, ex alias tenetur magnam minus provident facere, asperiores consequuntur ea beatae atque deserunt
+              distinctio aliquam?</p>
+            <a href="https://github.com/SoSoSammy/3-column-preview-card-component_frontendmentor" target="_blank"
+              class="button code-link">Check out the code</a>
+            <a href="http://sososammy.com/3-column-preview-card-component_frontendmentor/" target="_blank"
+              class="button project-link">View the project</a>
+          </article>
+        </div><!-- end .articles -->
+      </div><!-- end .content-wrap -->
+
+    </section><!-- end .projects -->
+
+    <!-- ******************************************** About Me **************************************************-->
 
     <section class="about-me" id="about-me">
       <img src="images/sammy_professional__photo.jpg" alt="Sammy looking like a professional model">
@@ -93,7 +108,7 @@
           delectus
           dignissimos dicta.</p>
       </div>
-    </section>
+    </section><!-- end .about-me -->
   </main>
 
 
