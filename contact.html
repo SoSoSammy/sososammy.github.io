@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samantha Vazquez">
+    <meta name="description" content="Learn about the education of Samantha Vazquez.">
+    <title>Contact Me | Samantha Vazquez</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/58f5ab4b62.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <!-- ===================== Header ======================== -->
+    <header>
+        <nav role="navigation" aria-label="main menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="education.html"><i class="fas fa-graduation-cap"></i>Education</a></li>
+                <li><a href="work-experience.html"><i class="fas fa-briefcase"></i> Work Experience</a></li>
+                <li><a href="skills.html"><i class="fas fa-user-cog"></i> Skills</a></li>
+                <li><a href="interests.html"><i class="fas fa-camera-retro"></i> Interests</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-code"></i> Portfolio</a></li>
+                <li><a class="active" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================== Contact Me ==================== -->
+    <main class="contact-me">
+        <h1><i class="fas fa-envelope"></i> Contact Me</h1>
+
+        <form id="contact-form" class="card" action="#" method="">
+            <div class="name-first">
+                <label for="first-name" form="contact-form">First Name</label>
+                <br>
+                <input form="contact-form" type="text" name="first-name" id="first-name"
+                    placeholder="Type first name here" required>
+            </div><!-- end .name-first -->
+
+            <div class="name-last">
+                <label for="last-name" form="contact-form">Last Name</label>
+                <br>
+                <input form="contact-form" type="text" name="last-name" id="last-name" placeholder="Type last name here"
+                    required>
+            </div><!-- end .name-last -->
+
+            <div class="email">
+                <label for="email" form="contact-form">Email</label>
+                <br>
+                <input form="contact-form" type="email" name="email" id="email" placeholder="email@example.com"
+                    required>
+            </div><!-- end .email -->
+
+            <div class="phone">
+                <label for="phone" form="contact-form">Telephone</label>
+                <br>
+                <input form="contact-form" type="tel" name="phone" id="phone" placeholder="Phone number">
+            </div><!-- end .phone -->
+
+            <div class="subject">
+                <label for="subject" form="contact-form">Subject</label>
+                <br>
+                <input form="contact-form" type="text" name="subject" id="subject" placeholder="Type your subject here"
+                    required>
+            </div><!-- end .subject -->
+
+            <div class="message">
+                <label for="message" form="contact-form">Message</label>
+                <br>
+                <textarea form="contact-form" name="message" id="message" placeholder="Type your message here"
+                    required></textarea>
+            </div><!-- end .message -->
+
+            <button class="button" name="submit-button" type="submit" form="contact-form">Send</button>
+        </form><!-- end #contact-form .card -->
+    </main><!-- end .contact-me -->
+
+    <!-- ===================== Footer ======================== -->
+    <footer>
+        <nav role="navigation" aria-label="footer links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="work-experience.html">Work Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <small>&copy;Copyright 2022 Samantha Vazquez</small>
+    </footer>
+</body>
+
+</html>
