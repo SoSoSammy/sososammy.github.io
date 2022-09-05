@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6,
-figcaption{
+figcaption {
     font-family: "Raleway", sans-serif;
 }
 
@@ -71,7 +71,7 @@ header nav a {
     padding: 14px 16px;
     border-bottom: 3px solid transparent;
     -webkit-transition: border-bottom 0.2s ease-in;
-    transition: border-bottom 0.2s ease-in; 
+    transition: border-bottom 0.2s ease-in;
 }
 
 header nav a:hover {
@@ -88,14 +88,17 @@ header a.active {
         flex-direction: column;
         width: 100%;
     }
+
     header nav a {
         border: none;
         transition: background-color 0.2s ease-in;
     }
+
     header nav a:hover {
-        background-color:#e4e3e3;
+        background-color: #e4e3e3;
         border: none;
     }
+
     header nav a.active {
         color: var(--light-color);
         background-color: var(--accent-color);
@@ -164,9 +167,11 @@ header a.active {
         padding: 25px 0;
         margin: 30px auto;
     }
+
     .bio-image {
         padding: 0;
     }
+
     .bio-buttons {
         display: flex;
         flex-direction: column;
@@ -174,51 +179,64 @@ header a.active {
         height: 110px;
     }
 }
+
 @media screen and (min-width: 320px) {
+
     .biography img,
     .bio-image {
         width: 211px;
         height: 203px;
     }
+
     .bio-text {
         width: 211px;
     }
+
     .biography .button {
         width: 165px;
     }
 }
+
 @media screen and (min-width: 375px) {
     .bio-card {
         padding: 30px 10px;
     }
+
     .biography img,
     .bio-image {
         width: 281px;
         height: 271px;
     }
+
     .bio-text {
         width: 281px;
     }
+
     .biography .button {
         width: 235px;
     }
 }
+
 @media screen and (min-width: 425px) {
     .bio-card {
         padding: 35px 30px;
     }
+
     .biography img,
     .bio-image {
         width: 337px;
         height: 327px;
     }
+
     .bio-text {
         width: 337px;
     }
+
     .biography .button {
         width: 295px;
     }
 }
+
 /* For tablet */
 @media screen and (min-width: 768px) {
     .bio-card {
@@ -227,53 +245,66 @@ header a.active {
         align-items: center;
         padding: 15px 25px 25px 25px;
     }
+
     .bio-text {
         height: 370px;
     }
+
     .bio-image {
         padding-right: 20px;
     }
+
     .biography img,
     .bio-image {
         width: 274px;
         height: 365px;
     }
+
     .biography .button {
         width: 100px;
         margin: 5px;
     }
 }
+
 /* For laptops */
 @media screen and (min-width: 1000px) {
     .bio-card {
         padding: 25px;
         align-items: flex-start;
     }
+
     .biography img,
     .bio-image {
         width: 320px;
         height: 427px;
     }
+
     .bio-text {
         width: 90%;
     }
 }
+
 @media screen and (min-width: 1400px) {
+
     .biography img,
     .bio-image {
         width: 384px;
         height: 512px;
     }
+
     .bio-text {
         width: 90%;
     }
 }
+
 @media screen and (min-width: 2500px) {
+
     .biography img,
     .bio-image {
         width: 480px;
         height: 80%;
     }
+
     .bio-text {
         width: 90%;
     }
@@ -314,28 +345,35 @@ header a.active {
         align-items: center;
     }
 }
+
 @media screen and (max-width: 320px) {
+
     .yogurtland-img,
     .fbla-img {
         width: 175px;
         height: 175px;
     }
+
     .presentation-img {
         width: 172px;
         height: 192px;
     }
 }
+
 @media screen and (max-width: 425px) {
+
     .yogurtland-img,
     .fbla-img {
         width: 220px;
         height: 220px;
     }
+
     .presentation-img {
         width: 225px;
         height: 252px;
     }
 }
+
 /* ==================================== Skills ============================== */
 .skills p {
     text-align: center;
@@ -378,16 +416,19 @@ header a.active {
 
 /* Media Queries */
 @media screen and (max-width: 375px) {
+
     .hard-worker-img,
     .artistic-img,
     .good-listener-img {
         width: 200px;
         height: 200px;
     }
+
     .photographic-memory-img {
         width: 194px;
         height: 218px;
     }
+
     .creative-img {
         width: 184px;
         height: 218px;
@@ -438,10 +479,12 @@ header a.active {
         display: block;
         width: 100%;
     }
+
     .column-2 {
         display: block;
         width: 100%;
     }
+
     .image-gallery {
         flex-direction: column;
     }
@@ -486,38 +529,46 @@ header a.active {
     .portfolio-item-container {
         flex-direction: column;
     }
+
     .portfolio-item {
         width: 90%;
         display: flex;
     }
+
     .portfolio-item img {
         width: 250px;
         height: 250px;
     }
 }
+
 @media screen and (max-width: 425px) {
     .portfolio-item-container {
         flex-direction: column;
     }
+
     .portfolio-item {
         display: flex;
         flex-direction: column;
     }
+
     .portfolio-item img {
         width: 100%;
         height: auto;
     }
 }
+
 @media screen and (min-width: 1400px) {
     .portfolio-item {
         width: 27%;
     }
 }
+
 @media screen and (min-width: 2500px) {
     .portfolio-item {
         width: 20%;
     }
 }
+
 /* ================================== Contact =========================== */
 
 .contact-me .name-first {
@@ -557,17 +608,18 @@ header a.active {
     justify-items: center;
     justify-content: center;
     grid-template-areas:
-    "fname lname"
-    "email phone"
-    "subject subject"
-    "message message"
-    "button button";
+        "fname lname"
+        "email phone"
+        "subject subject"
+        "message message"
+        "button button";
     grid-gap: 25px;
 }
 
 .contact-me label {
     display: block;
 }
+
 .name-first,
 .name-last,
 .email,
@@ -579,14 +631,17 @@ header a.active {
 .email {
     margin-right: 50px;
 }
+
 .name-last,
 .phone {
     margin-left: 50px;
 }
+
 .subject,
 .message {
     width: 120%;
 }
+
 .contact-me input {
     width: 100%;
     height: 55px;
@@ -616,20 +671,24 @@ header a.active {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+
     .name-first,
     .name-last,
     .email,
     .phone {
         width: 95%;
     }
+
     .name-first,
     .email {
         margin-right: 0;
     }
+
     .name-last,
     .phone {
         margin-left: 0;
     }
+
     .subject,
     .message {
         width: 100%;
@@ -639,55 +698,64 @@ header a.active {
 @media screen and (max-width: 425px) {
     .contact-me form {
         grid-template-areas:
-        "fname fname"
-        "lname lname"
-        "email email"
-        "phone phone"
-        "subject subject"
-        "message message"
-        "button button";
-        
+            "fname fname"
+            "lname lname"
+            "email email"
+            "phone phone"
+            "subject subject"
+            "message message"
+            "button button";
+
     }
 }
 
 @media screen and (min-width: 1400px) {
+
     .name-first,
     .name-last,
     .email,
     .phone {
         width: 125%;
     }
+
     .name-first,
     .email {
         margin-right: 125px;
     }
+
     .name-last,
     .phone {
         margin-left: 125px;
     }
+
     .subject,
     .message {
         width: 135%;
     }
 }
+
 @media screen and (min-width: 2500px) {
     .contact-me form {
         padding: 45px 20px 50px 20px;
     }
+
     .name-first,
     .name-last,
     .email,
     .phone {
         width: 140%;
     }
+
     .name-first,
     .email {
         margin-right: 200px;
     }
+
     .name-last,
     .phone {
         margin-left: 200px;
     }
+
     .subject,
     .message {
         width: 145%;
