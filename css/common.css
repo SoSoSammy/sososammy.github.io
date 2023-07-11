@@ -25,3 +25,27 @@ h6 {
 	width: 90vw;
 	margin: auto;
 }
+
+.btn {
+	text-decoration: none;
+	background-color: var(--accent-color);
+	color: var(--secondary-color);
+	padding: 8px 25px;
+	border: 1px solid var(--accent-color);
+	border-radius: 25px;
+	transition: background-color 0.2s ease-in;
+}
+
+.btn:hover {
+	background-color: var(--accent-color--hover);
+}
+
+.btn--secondary {
+	background-color: transparent;
+	color: var(--accent-color);
+	transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.btn--secondary:hover {
+	color: var(--primary-color);
+}
