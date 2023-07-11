@@ -21,6 +21,11 @@ h6 {
 	font-family: "Playfair Display", serif;
 }
 
+h1,
+h2 {
+	text-align: center;
+}
+
 .container {
 	width: 90vw;
 	margin: auto;
