@@ -9,6 +9,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/homepage.css" />
 
   <!-- Favicon -->
   <link rel="icon" href="images/logo/favicon.png" />
@@ -71,24 +72,26 @@
   <main>
     <!-- ============================ Hero ====================== -->
     <section class="hero">
-      <div class="hero__img">
-        <img src="images/hero.JPG" alt="Samantha Vazquez" />
-      </div>
-      <!-- end .hero__img -->
-
-      <div class="hero__text">
-        <h1>Hello, I'm Samantha Vazquez</h1>
-        <p>
-          I'm a front-end web developer with a passion for building engaging
-          websites that are pixel-perfect.
-        </p>
-        <div class="hero__buttons">
-          <a href="projects.html" class="btn">Projects</a>
-          <a href="#" class="btn btn--secondary">Resume</a>
+      <div class="container">
+        <div class="hero__img">
+          <img src="images/hero.jpg" alt="Samantha Vazquez" />
         </div>
-        <!-- end .hero__buttons -->
-      </div>
-      <!-- end .hero__text -->
+        <!-- end .hero__img -->
+
+        <div class="hero__text">
+          <h1>Hello, I'm Samantha Vazquez</h1>
+          <p>
+            I'm a front-end web developer with a passion for building engaging
+            websites that are pixel-perfect.
+          </p>
+          <div class="hero__buttons">
+            <a href="projects.html" class="btn">Projects</a>
+            <a href="#" class="btn btn--secondary">Resume</a>
+          </div>
+          <!-- end .hero__buttons -->
+        </div>
+        <!-- end .hero__text -->
+      </div><!-- end .container -->
     </section>
     <!-- end .hero -->
 
@@ -97,11 +100,11 @@
       <h2>Featured Projects</h2>
 
       <!-- ======= Projects Slider (Mobile) ======= -->
-      <div class="slider--mobile">
+      <div class="slider slider--mobile">
         <!-- Slides -->
         <div class="slide slide--1">
           <div class="project">
-            <img src="" alt="" />
+            <img src="https://placehold.co/400" alt="" />
             <div class="project__details">
               <span>HTML</span>
               <span>CSS</span>
@@ -115,7 +118,7 @@
 
         <div class="slide slide--2">
           <div class="project">
-            <img src="" alt="" />
+            <img src="https://placehold.co/400" alt="" />
             <div class="project__details">
               <span>Angular</span>
               <span>Bootstrap 5</span>
@@ -128,7 +131,7 @@
 
         <div class="slide slide--3">
           <div class="project">
-            <img src="" alt="" />
+            <img src="https://placehold.co/400" alt="" />
             <div class="project__details">
               <span>HTML</span>
               <span>CSS</span>
@@ -141,7 +144,7 @@
 
         <div class="slide slide--4">
           <div class="project">
-            <img src="" alt="" />
+            <img src="https://placehold.co/400" alt="" />
             <div class="project__details">
               <span>HTML</span>
               <span>CSS</span>
@@ -155,7 +158,7 @@
 
         <div class="slide slide--5">
           <div class="project">
-            <img src="" alt="" />
+            <img src="https://placehold.co/400" alt="" />
             <div class="project__details">
               <span>HTML</span>
               <span>CSS</span>
@@ -169,7 +172,7 @@
 
         <div class="slide slide--6">
           <div class="project">
-            <img src="" alt="" />
+            <img src="https://placehold.co/400" alt="" />
             <div class="project__details">
               <span>HTML</span>
               <span>CSS</span>
@@ -184,20 +187,20 @@
         <button class="slider__btn slider__btn--left">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button class="slider__btn slider__btn--left">
+        <button class="slider__btn slider__btn--right">
           <i class="fa-solid fa-chevron-right"></i>
         </button>
         <!-- Indicator -->
         <div class="slider__indicator"></div>
       </div>
-      <!-- end .slider--mobile -->
+      <!-- end .slider.slider--mobile -->
 
       <!-- ======= Projects Slider (Desktop) ======= -->
-      <div class="slider--desktop">
+      <div class="slider slider--desktop">
         <!-- Slides -->
         <div class="slide slide--1">
           <div class="project">
-            <img src="" alt="" />
+            <img src="https://placehold.co/400" alt="" />
             <div class="project__details">
               <span>HTML</span>
               <span>CSS</span>
@@ -208,7 +211,7 @@
           <!-- end .project -->
 
           <div class="project">
-            <img src="" alt="" />
+            <img src="https://placehold.co/400" alt="" />
             <div class="project__details">
               <span>Angular</span>
               <span>Bootstrap 5</span>
@@ -221,7 +224,7 @@
 
         <div class="slide slide--2">
           <div class="project">
-            <img src="" alt="" />
+            <img src="https://placehold.co/400" alt="" />
             <div class="project__details">
               <span>HTML</span>
               <span>CSS</span>
@@ -231,7 +234,7 @@
           <!-- end .project -->
 
           <div class="project">
-            <img src="" alt="" />
+            <img src="https://placehold.co/400" alt="" />
             <div class="project__details">
               <span>HTML</span>
               <span>CSS</span>
@@ -245,7 +248,7 @@
 
         <div class="slide slide--3">
           <div class="project">
-            <img src="" alt="" />
+            <img src="https://placehold.co/400" alt="" />
             <div class="project__details">
               <span>HTML</span>
               <span>CSS</span>
@@ -256,7 +259,7 @@
           <!-- end .project -->
 
           <div class="project">
-            <img src="" alt="" />
+            <img src="https://placehold.co/400" alt="" />
             <div class="project__details">
               <span>HTML</span>
               <span>CSS</span>
@@ -271,13 +274,13 @@
         <button class="slider__btn slider__btn--left">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button class="slider__btn slider__btn--left">
+        <button class="slider__btn slider__btn--right">
           <i class="fa-solid fa-chevron-right"></i>
         </button>
         <!-- Indicator -->
         <div class="slider__indicator"></div>
       </div>
-      <!-- end .slider--desktop -->
+      <!-- end .slider.slider--desktop -->
 
       <a href="projects.html" class="btn">See More</a>
 
