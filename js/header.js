@@ -8,4 +8,6 @@ headerMenu.addEventListener("click", function (e) {
 	headerMenu.classList.toggle("open");
 	// Show navigation
 	headerNav.classList.toggle("open");
+	// Prevent scrolling
+	document.body.classList.toggle("no-scroll");
 });
