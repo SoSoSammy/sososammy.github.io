@@ -1,9 +1,10 @@
 /* ================== Hero ================ */
-/* Mobile */
+/* ******** Mobile ******** */
 .hero .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -17,6 +18,10 @@
 	align-items: center;
 }
 
+.desktop-heading {
+	display: none;
+}
+
 .hero__buttons a {
 	display: inline-block;
 }
@@ -25,9 +30,41 @@
 	margin-left: 10px;
 }
 
+/* ******** Tablet/Desktop ******** */
+@media only screen and (min-width: 768px) {
+	.hero .container {
+		flex-direction: row-reverse;
+		align-items: stretch;
+		justify-content: space-between;
+	}
+
+	.hero__text {
+		align-items: flex-start;
+	}
+
+	.hero__text > h1 {
+		display: none;
+	}
+
+	.desktop-heading {
+		display: block;
+	}
+
+	.desktop-heading h1 {
+		font-size: 36px;
+		text-align: left;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.hero__text p {
+		margin-right: 15px;
+	}
+}
+
 /* ================== Projects ================ */
 
-/* Mobile */
+/* ******** Mobile ******** */
 .projects-wave {
 	background-color: var(--secondary-color);
 }
@@ -38,11 +75,10 @@
 
 .projects-wave h2 {
 	margin-top: 0;
-	margin-bottom: -5px;
 }
 
 .slider {
-	height: 280px;
+	height: 300px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -51,7 +87,7 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 280px;
+	height: 300px;
 
 	display: flex;
 	align-items: center;
@@ -122,6 +158,16 @@
 	font-weight: 500;
 }
 
+.project__links {
+	margin-bottom: 20px;
+}
+
+.project__links a {
+	color: var(--accent-color);
+	font-weight: 500;
+	margin-right: 10px;
+}
+
 /* Hide desktop slider on mobile */
 .slider--desktop {
 	display: none;
@@ -137,9 +183,107 @@
 	justify-content: center;
 }
 
-/* ================== Skills ================ */
+/* ******** Tablet ******** */
+@media only screen and (min-width: 768px) {
+	.slider,
+	.slide {
+		height: 360px;
+	}
 
-/* Mobile */
+	.project img {
+		width: 250px;
+	}
+
+	.slider__btn {
+		width: 50px;
+		height: 50px;
+		font-size: 18px;
+	}
+}
+
+/* ******** Desktop ******** */
+@media only screen and (min-width: 992px) {
+	.projects-wave h2 {
+		margin-bottom: 10px;
+	}
+
+	.slider--mobile {
+		display: none;
+	}
+
+	.slider--desktop {
+		display: block;
+	}
+
+	.slider,
+	.slide {
+		height: 390px;
+	}
+
+	.projects-container {
+		display: flex;
+		justify-content: center;
+		width: 80%;
+	}
+
+	.project:first-child {
+		margin-right: 20px;
+	}
+
+	.project:last-child {
+		margin-left: 20px;
+	}
+
+	.project img {
+		width: 300px;
+	}
+
+	.slider__btn {
+		width: 60px;
+		height: 60px;
+		font-size: 24px;
+	}
+
+	/* Image overlay */
+	.img-wrapper {
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: 300px;
+		height: 300px;
+	}
+
+	.overlay {
+		position: absolute;
+		height: 300px;
+		width: 300px;
+		border-radius: 25px;
+		background-color: rgba(0, 0, 0, 0.2);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		transition: opacity 0.3s ease-in;
+	}
+
+	.img-wrapper:hover .overlay {
+		opacity: 1;
+	}
+
+	.project__links {
+		margin-bottom: 0;
+	}
+
+	.project__links a {
+		background-color: var(--secondary-color);
+		padding: 8px 22px;
+		border-radius: 25px;
+		text-decoration: none;
+	}
+}
+
+/* ================== Skills ================ */
+/* ******** Mobile ******** */
 .skills-list {
 	display: flex;
 	justify-content: center;
@@ -163,7 +307,7 @@
 
 /* ================== Education ================ */
 
-/* Mobile */
+/* ******** Mobile ******** */
 .education-card {
 	background-color: var(--secondary-color);
 	display: flex;
@@ -175,7 +319,7 @@
 
 /* ==================== Experience ================ */
 
-/* Mobile */
+/* ******** Mobile ******** */
 .timeline {
 	position: relative;
 	/* max-width: 1200px; */
@@ -250,7 +394,7 @@
 	left: -15px;
 }
 
-/* Desktop */
+/* ******** Desktop ******** */
 @media only screen and (min-width: 992px) {
 	.timeline {
 		margin: 50px auto;
