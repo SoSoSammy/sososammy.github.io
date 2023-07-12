@@ -1,0 +1,47 @@
+/* ******** Mobile ******** */
+.artwork {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	background-color: var(--secondary-color);
+	border-radius: 25px;
+	padding: 20px;
+}
+
+.art img {
+	width: 100%;
+	border-radius: 25px;
+}
+
+.art__medium {
+	font-weight: 500;
+}
+
+/* ******** Tablet ******** */
+@media only screen and (min-width: 768px) {
+	.artwork {
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		padding: 20px 10px;
+	}
+
+	.art {
+		flex-basis: 48%; /* Two per row */
+	}
+}
+
+/* ******** Desktop ******** */
+@media only screen and (min-width: 992px) {
+	.art {
+		flex-basis: 31%; /* Three per row */
+	}
+}
+
+/* ******** Large Desktop ******** */
+@media only screen and (min-width: 1400px) {
+	.art {
+		flex-basis: 23%; /* Four per row */
+	}
+}
