@@ -2,171 +2,171 @@
 
 /* ================== Hero ================ */
 .hero .container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .hero__img img {
-	width: 350px;
+  width: 350px;
 }
 
 .hero__text {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__buttons a {
-	display: inline-block;
+  display: inline-block;
 }
 
 .hero__buttons a:last-child {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 /* ================== Projects ================ */
 
 .projects-wave {
-	background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 .projects-wave svg:last-child {
-	margin-bottom: -7px;
+  margin-bottom: -7px;
 }
 
 .projects-wave h2 {
-	margin-top: 0;
-	margin-bottom: -5px;
+  margin-top: 0;
+  margin-bottom: -5px;
 }
 
 .slider {
-	height: 280px;
-	margin: 0 auto;
-	position: relative;
+  height: 280px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .slide {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 280px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 280px;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transition: transform 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
 }
 
 .slider__btn {
-	position: absolute;
-	top: 50%;
-	z-index: 10;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
 
-	border: 2px solid var(--accent-color);
-	border-radius: 50%;
-	background-color: transparent;
-	color: var(--accent-color);
-	font-size: 15px;
-	width: 40px;
-	height: 40px;
-	cursor: pointer;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--accent-color);
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .slider__btn--left {
-	left: 5%;
-	transform: translate(-50%, -50%);
+  left: 5%;
+  transform: translate(-50%, -50%);
 }
 
 .slider__btn--right {
-	right: 5%;
-	transform: translate(50%, -50%);
+  right: 5%;
+  transform: translate(50%, -50%);
 }
 
 .dots {
-	position: absolute;
-	bottom: 0%;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
 }
 
 .dots__dot {
-	border: none;
-	background-color: #b9b9b9;
-	opacity: 0.7;
-	height: 12px;
-	width: 12px;
-	border-radius: 50%;
-	margin-right: 1.5rem;
-	cursor: pointer;
-	transition: all 0.5s;
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 .dots__dot:last-child {
-	margin: 0;
+  margin: 0;
 }
 
 .dots__dot--active {
-	background-color: #888;
-	opacity: 1;
+  background-color: #888;
+  opacity: 1;
 }
 
 .project img {
-	width: 200px;
-	border-radius: 25px;
+  width: 200px;
+  border-radius: 25px;
 }
 
 .project__details span {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 /* Hide desktop slider on mobile */
 .slider--desktop {
-	display: none;
+  display: none;
 }
 
 .projects-wave a.btn {
-	display: inline-block;
-	margin-top: 20px;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .projects__cta {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* ================== Skills ================ */
 
 .skills-list {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .skills-list div {
-	flex-basis: 45%; /* Two skills per row */
-	font-size: 18px;
+  flex-basis: 45%; /* Two skills per row */
+  font-size: 18px;
 }
 
 .skills-list div:nth-child(odd) {
-	text-align: right;
-	margin-right: 7px;
+  text-align: right;
+  margin-right: 7px;
 }
 
 .skills-list div:nth-child(even) {
-	text-align: left;
-	margin-left: 7px;
+  text-align: left;
+  margin-left: 7px;
 }
 
 /* ================== Education ================ */
 
 .education-card {
-	background-color: var(--secondary-color);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border-radius: 25px;
-	padding: 25px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  padding: 25px;
 }
