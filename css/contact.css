@@ -1,0 +1,44 @@
+/* ******** Mobile ******** */
+form {
+	background-color: var(--secondary-color);
+	border-radius: 25px;
+	padding: 25px;
+}
+
+.form-row {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+input,
+textarea {
+	border: 1px solid rgb(211, 211, 211);
+	border-radius: 10px;
+	padding: 10px;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+form button {
+	font-family: inherit;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+/* ******** Desktop ******** */
+@media only screen and (min-width: 992px) {
+	.form-row {
+		flex-direction: row;
+		column-gap: 15px;
+	}
+
+	.form-row .form-group {
+		flex: 1;
+	}
+}
