@@ -60,3 +60,18 @@ h2 {
 .btn--secondary:hover {
 	color: var(--primary-color);
 }
+
+/* ******** Tablet ******** */
+@media only screen and (min-width: 768px) {
+	h2 {
+		font-size: 26px;
+	}
+}
+
+/* ******** Desktop ******** */
+@media only screen and (min-width: 992px) {
+	h1,
+	h2 {
+		text-align: left;
+	}
+}
