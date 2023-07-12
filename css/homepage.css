@@ -584,13 +584,6 @@
 		justify-content: flex-end;
 	}
 
-	.vertical-line {
-		display: block;
-		width: 2px;
-		height: 150px;
-		background-color: var(--accent-color);
-	}
-
 	.horizontal-line {
 		display: none;
 	}
