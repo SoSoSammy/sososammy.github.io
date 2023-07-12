@@ -239,8 +239,8 @@
 	}
 
 	.slider__btn {
-		width: 60px;
-		height: 60px;
+		width: 55px;
+		height: 55px;
 		font-size: 24px;
 	}
 
@@ -283,11 +283,17 @@
 }
 
 /* ================== Skills ================ */
+
 /* ******** Mobile ******** */
+.skills .container {
+	margin-bottom: 40px;
+}
+
 .skills-list {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	row-gap: 40px;
 }
 
 .skills-list div {
@@ -305,6 +311,24 @@
 	margin-left: 7px;
 }
 
+/* ******** Desktop ******** */
+@media only screen and (min-width: 992px) {
+	.skills-list {
+		justify-content: flex-start;
+		row-gap: 30px;
+	}
+
+	.skills-list div {
+		flex-basis: 25%;
+	}
+
+	.skills-list div:nth-child(odd),
+	.skills-list div:nth-child(even) {
+		text-align: left;
+		margin: 0;
+	}
+}
+
 /* ================== Education ================ */
 
 /* ******** Mobile ******** */
@@ -314,7 +338,16 @@
 	flex-direction: column;
 	align-items: center;
 	border-radius: 25px;
-	padding: 25px;
+	padding: 25px 35px;
+}
+
+/* ******** Desktop ******** */
+@media only screen and (min-width: 992px) {
+	.education-card {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		column-gap: 10px;
+	}
 }
 
 /* ==================== Experience ================ */
@@ -484,5 +517,81 @@
 		border-bottom: 15px solid transparent;
 		border-right: 15px solid var(--secondary-color);
 		left: -15px;
+	}
+}
+
+/* =================== Certificates and Awards =================== */
+
+/* ******** Mobile ******** */
+.awards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	row-gap: 20px;
+}
+
+.award {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.horizontal-line {
+	width: 85px;
+	height: 1px;
+	margin-top: 20px;
+	background-color: var(--accent-color);
+}
+
+.vertical-line {
+	display: none;
+}
+
+/* ******** Desktop ******** */
+@media only screen and (min-width: 992px) {
+	.awards {
+		flex-direction: row;
+		justify-content: center;
+		align-items: stretch;
+		text-align: left;
+		flex-wrap: wrap;
+		row-gap: 0px;
+	}
+
+	.award {
+		flex-direction: row;
+		flex-basis: 30%;
+	}
+
+	.award:not(:first-child):not(:nth-child(3))::before {
+		content: "";
+		width: 1px;
+		height: 150px;
+		background-color: var(--accent-color);
+	}
+
+	.award__text {
+		padding: 0 20px;
+	}
+
+	.award-row-1 {
+		flex-basis: 50%;
+	}
+
+	/* Fix gap on right side */
+	.award-row-1:first-child {
+		justify-content: flex-end;
+	}
+
+	.vertical-line {
+		display: block;
+		width: 2px;
+		height: 150px;
+		background-color: var(--accent-color);
+	}
+
+	.horizontal-line {
+		display: none;
 	}
 }
