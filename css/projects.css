@@ -13,8 +13,14 @@
 	background-color: var(--secondary-color);
 }
 
-.project__languages {
+.project__languages span {
+	font-size: 14px;
 	font-weight: 500;
+	display: inline-block;
+	margin-bottom: 5px;
+	background-color: var(--primary-color);
+	padding: 5px 10px;
+	border-radius: 25px;
 }
 
 .project__body {
