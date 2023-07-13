@@ -270,13 +270,13 @@
 		display: flex;
 		align-items: center;
 		width: 300px;
-		height: 184px;
+		height: 179px;
 	}
 
 	.overlay {
 		position: absolute;
 		width: 300px;
-		height: 184px;
+		height: 179px;
 		background-color: rgba(0, 0, 0, 0.2);
 		display: flex;
 		justify-content: center;
@@ -310,7 +310,7 @@
 	.img-wrapper,
 	.overlay {
 		width: 400px;
-		height: 245px;
+		height: 238px;
 	}
 }
 
@@ -323,7 +323,7 @@
 	.img-wrapper,
 	.overlay {
 		width: 500px;
-		height: 306px;
+		height: 298px;
 	}
 
 	.slider,
