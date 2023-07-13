@@ -1,0 +1,79 @@
+:root {
+	--primary-color: #f8edeb;
+	--secondary-color: #ffffff;
+	--accent-color: #975e5f;
+	--accent-color--hover: #8a5656;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	background-color: var(--primary-color);
+	overflow-x: hidden;
+}
+
+/* Important! Needed to make timeline work! */
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Playfair Display", serif;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+.container {
+	width: 90vw;
+	margin: auto;
+}
+
+.btn {
+	text-decoration: none;
+	background-color: var(--accent-color);
+	color: var(--secondary-color);
+	padding: 8px 25px;
+	border: 2px solid var(--accent-color);
+	border-radius: 25px;
+	transition: background-color 0.2s ease-in;
+	display: inline-block;
+}
+
+.btn:hover {
+	border: 2px solid var(--accent-color--hover);
+	background-color: var(--accent-color--hover);
+}
+
+.btn--secondary {
+	background-color: transparent;
+	color: var(--accent-color);
+	transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.btn--secondary:hover {
+	color: var(--primary-color);
+}
+
+/* ******** Tablet ******** */
+@media only screen and (min-width: 768px) {
+	h2 {
+		font-size: 26px;
+	}
+}
+
+/* ******** Desktop ******** */
+@media only screen and (min-width: 992px) {
+	h1,
+	h2 {
+		text-align: left;
+	}
+}

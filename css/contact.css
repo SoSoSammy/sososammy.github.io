@@ -1,0 +1,104 @@
+/* ******** Mobile ******** */
+form {
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 10px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+form button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: none;
+  justify-content: center;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid var(--accent-color);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: var(--accent-color) transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Submit Response */
+.submit-response {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  display: none;
+}
+
+/* ******** Desktop ******** */
+@media only screen and (min-width: 992px) {
+  .form-row {
+    flex-direction: row;
+    column-gap: 15px;
+  }
+
+  .form-row .form-group {
+    flex: 1;
+  }
+
+  .submit-response {
+    text-align: left;
+  }
+}
