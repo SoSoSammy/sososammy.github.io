@@ -10,6 +10,7 @@
 
 .hero__img img {
 	width: 350px;
+	border-radius: 25px;
 }
 
 .hero__text {
@@ -65,6 +66,7 @@
 /* ================== Projects ================ */
 
 /* ******** Mobile ******** */
+/* Wave Look */
 .projects-wave {
 	background-color: var(--secondary-color);
 }
@@ -77,6 +79,7 @@
 	margin-top: 0;
 }
 
+/* Slider */
 .slider {
 	height: 300px;
 	margin: 0 auto;
@@ -120,6 +123,7 @@
 	transform: translate(50%, -50%);
 }
 
+/* Dot indicator */
 .dots {
 	position: absolute;
 	bottom: 0%;
@@ -149,13 +153,32 @@
 	opacity: 1;
 }
 
+/* Project */
+.project {
+	display: flex;
+	flex-direction: column;
+	margin: 25px;
+}
+
 .project img {
 	width: 200px;
-	border-radius: 25px;
+	margin: 0 auto;
+}
+
+.project__details h3 {
+	font-size: 22px;
+	margin-top: 15px;
+	margin-bottom: 5px;
 }
 
 .project__details span {
+	font-size: 14px;
 	font-weight: 500;
+	display: inline-block;
+	margin-bottom: 5px;
+	background-color: var(--primary-color);
+	padding: 5px 10px;
+	border-radius: 25px;
 }
 
 .project__links {
@@ -166,6 +189,7 @@
 	color: var(--accent-color);
 	font-weight: 500;
 	margin-right: 10px;
+	text-decoration: none;
 }
 
 /* Hide desktop slider on mobile */
@@ -191,7 +215,7 @@
 	}
 
 	.project img {
-		width: 250px;
+		width: 300px;
 	}
 
 	.slider__btn {
@@ -234,10 +258,6 @@
 		margin-left: 20px;
 	}
 
-	.project img {
-		width: 300px;
-	}
-
 	.slider__btn {
 		width: 55px;
 		height: 55px;
@@ -250,14 +270,13 @@
 		display: flex;
 		align-items: center;
 		width: 300px;
-		height: 300px;
+		height: 184px;
 	}
 
 	.overlay {
 		position: absolute;
-		height: 300px;
 		width: 300px;
-		border-radius: 25px;
+		height: 184px;
 		background-color: rgba(0, 0, 0, 0.2);
 		display: flex;
 		justify-content: center;
@@ -279,6 +298,37 @@
 		padding: 8px 22px;
 		border-radius: 25px;
 		text-decoration: none;
+	}
+}
+
+/* ******** Large Desktop ******** */
+@media only screen and (min-width: 1200px) {
+	.project img {
+		width: 400px;
+	}
+
+	.img-wrapper,
+	.overlay {
+		width: 400px;
+		height: 245px;
+	}
+}
+
+/* ******** Extra Large Desktop ******** */
+@media only screen and (min-width: 1800px) {
+	.project img {
+		width: 500px;
+	}
+
+	.img-wrapper,
+	.overlay {
+		width: 500px;
+		height: 306px;
+	}
+
+	.slider,
+	.slide {
+		height: 500px;
 	}
 }
 
