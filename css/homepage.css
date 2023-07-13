@@ -298,6 +298,11 @@
 		padding: 8px 22px;
 		border-radius: 25px;
 		text-decoration: none;
+		transition: background-color 0.2s ease-in;
+	}
+
+	.project__links a:hover {
+		background-color: #e2e2e2;
 	}
 }
 
