@@ -647,7 +647,7 @@
 
   .award:not(:first-child):not(:nth-child(3))::before {
     content: "";
-    width: 1px;
+    width: 3px;
     height: 150px;
     background-color: var(--accent-color);
   }
