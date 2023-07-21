@@ -69,10 +69,11 @@
 /* Wave Look */
 .projects-wave {
   background-color: var(--secondary-color);
+  margin-bottom: 30px;
 }
 
 .projects-wave svg:last-child {
-  margin-bottom: -7px;
+  margin-bottom: -10px;
 }
 
 .projects-wave h2 {
@@ -227,6 +228,10 @@
 
 /* ******** Desktop ******** */
 @media only screen and (min-width: 992px) {
+  .projects-wave {
+    margin-bottom: 0;
+  }
+
   .projects-wave h2 {
     margin-bottom: 10px;
   }
