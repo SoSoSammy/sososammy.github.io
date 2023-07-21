@@ -108,6 +108,15 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  display: flex;
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+}
+
+.slider__btn::before {
+  content: ""; /* Create a pseudo-element */
+  display: block;
+  padding-top: 100%; /* Height equal to the width (creates a circle) */
 }
 
 .slider__btn--left {
