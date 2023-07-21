@@ -609,6 +609,7 @@
   align-items: center;
   text-align: center;
   row-gap: 20px;
+  flex-wrap: wrap;
 }
 
 .award {
