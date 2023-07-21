@@ -76,10 +76,6 @@
   margin-bottom: -10px;
 }
 
-.projects-wave h2 {
-  margin-top: 0;
-}
-
 /* Slider */
 .slider {
   height: 300px;
@@ -137,8 +133,8 @@
   border: none;
   background-color: #b9b9b9;
   opacity: 0.7;
-  height: 12px;
-  width: 12px;
+  height: 1rem;
+  width: 1rem;
   border-radius: 50%;
   margin-right: 1.5rem;
   cursor: pointer;
