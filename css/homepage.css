@@ -106,8 +106,8 @@
   background-color: transparent;
   color: var(--accent-color);
   font-size: 15px;
-  width: 40px;
-  height: 40px;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
   display: flex;
   justify-content: center; /* Center the icon horizontally */
@@ -121,12 +121,12 @@
 }
 
 .slider__btn--left {
-  left: 5%;
+  left: 6%;
   transform: translate(-50%, -50%);
 }
 
 .slider__btn--right {
-  right: 5%;
+  right: 6%;
   transform: translate(50%, -50%);
 }
 
@@ -165,7 +165,7 @@
 .project {
   display: flex;
   flex-direction: column;
-  margin: 25px;
+  /* margin: 25px; */
 }
 
 .project img {
@@ -189,9 +189,9 @@
   border-radius: 25px;
 }
 
-.project__links {
+/* .project__links {
   margin-bottom: 20px;
-}
+} */
 
 .project__links a {
   color: var(--accent-color);
@@ -213,6 +213,14 @@
 .projects__cta {
   display: flex;
   justify-content: center;
+}
+
+/* ******** Larger Phones ******** */
+@media only screen and (min-width: 375px) {
+  .slider__btn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 /* ******** Tablet ******** */
