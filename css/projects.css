@@ -1,66 +1,67 @@
 /* ******** Mobile ******** */
 .projects {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .project {
-	display: flex;
-	flex-direction: column;
-	border-radius: 25px;
-	overflow: hidden;
-	background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: var(--secondary-color);
 }
 
 .project img {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .project__languages span {
-	font-size: 14px;
-	font-weight: 500;
-	display: inline-block;
-	margin-bottom: 5px;
-	background-color: var(--primary-color);
-	padding: 5px 10px;
-	border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 5px;
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 25px;
 }
 
 .project__body {
-	padding: 20px;
+  padding: 20px;
 }
 
 .project__buttons {
-	display: flex;
-	column-gap: 10px;
+  display: flex;
+  column-gap: 10px;
 }
 
 /* ******** Tablet ******** */
 @media only screen and (min-width: 768px) {
-	.projects {
-		flex-direction: row;
-		justify-content: center;
-		flex-wrap: wrap;
-		gap: 20px;
-	}
+  .projects {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-	.project {
-		flex-basis: 48%; /* Two per row */
-	}
+  .project {
+    flex-basis: 48%; /* Two per row */
+  }
 }
 
 /* ******** Desktop ******** */
 @media only screen and (min-width: 992px) {
-	.project {
-		flex-basis: 31%; /* Three per row */
-	}
+  .project {
+    flex-basis: 31%; /* Three per row */
+  }
 }
 
 /* ******** Large Desktop ******** */
 @media only screen and (min-width: 1400px) {
-	.project {
-		flex-basis: 23%; /* Four per row */
-	}
+  .project {
+    flex-basis: 23%; /* Four per row */
+  }
 }
