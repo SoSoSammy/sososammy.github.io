@@ -2,13 +2,14 @@
 /* ******** Mobile ******** */
 .hero .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .hero__img img {
+  margin-top: 30px;
   width: 350px;
   border-radius: 25px;
 }
@@ -37,6 +38,10 @@
     flex-direction: row-reverse;
     align-items: stretch;
     justify-content: space-between;
+  }
+
+  .hero__img img {
+    margin-top: 0;
   }
 
   .hero__text {
