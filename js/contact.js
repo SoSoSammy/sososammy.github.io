@@ -29,7 +29,7 @@ form.addEventListener("submit", function (e) {
       (error) => {
         console.log("Failed...", error);
         // Set response to error message
-        submitResponse.innerHTML = `<p>❌ An error occurred: ${error.text}</p>`;
+        submitResponse.innerHTML = `<p>❌ Oops! an error occurred. Go back <a href="index.html">home</a></p>`;
         submitResponse.style.display = "block";
       }
     )
