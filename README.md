@@ -24,7 +24,7 @@ This is version 0.5 of my portfolio website. This version completely redesigns v
 * Education, experience, and skills on homepage
 * Certificates and awards on homepage
 
-### Technologies Used
+### Built With
 
 [![HTML5][HTML5-shield]][HTML5-url]
 [![CSS][CSS-shield]][CSS-url]
