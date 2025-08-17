@@ -137,38 +137,18 @@
 	}
 
 	/* Add bottom border for active links (not for contact) */
-	.header__nav li:not(:last-child) a {
+	.header__nav li a {
 		margin-right: 15px;
 		border-bottom: 2px solid transparent;
 		transition: border 0.2s ease-in;
 	}
 
-	.header__nav li:not(:last-child) a:hover {
+	.header__nav li a:hover {
 		border-bottom: 2px solid var(--accent-color);
 	}
 
-	.header__nav li:not(:last-child) a.active {
+	.header__nav li a.active {
 		border-bottom: 2px solid var(--accent-color);
-	}
-
-	/* Contact button */
-	.header__nav li:last-child a {
-		background-color: var(--accent-color);
-		color: var(--secondary-color);
-		padding: 10px 30px;
-		border: 2px solid var(--accent-color);
-		border-radius: 25px;
-		transition: background-color 0.2s ease-in;
-	}
-
-	.header__nav li:last-child a:hover {
-		background-color: var(--accent-color--hover);
-	}
-
-	/* Active contact button */
-	.header__nav li:last-child a.active {
-		background-color: transparent;
-		color: var(--accent-color);
 	}
 
 	/* Hide mobile social links */
