@@ -1,4 +1,6 @@
 # sososammy.github.io
+<img width="1900" height="912" alt="image" src="https://github.com/user-attachments/assets/f716b718-176d-45c0-af01-866ffbd78c13" />
+
 WELCOME TO MY *OFFICIAL* SOSOSAMMY WEBSITE!
 
 After no joke, like three months I finally figured out how to use GitHub pages. And, in honor of that, drum roll please... 🥁 🥁 🥁
