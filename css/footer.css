@@ -1,7 +1,8 @@
 /* ******** Mobile ******** */
 .footer-wave {
   background-color: var(--secondary-color);
-  margin-top: 10px;
+  margin-top: 40px;
+  padding-top: 30px;
 }
 
 .footer-wave .container {
@@ -9,10 +10,6 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
-}
-
-.footer-wave svg {
-  margin-top: -8px;
 }
 
 .footer-wave .container > img {
