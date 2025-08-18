@@ -1,6 +1,7 @@
 const headerMenu = document.querySelector(".header__menu");
 const headerNav = document.querySelector(".header__nav");
-const navLinks = document.querySelector(".nav__links");
+const headerNavLinks = document.querySelector(".nav__links");
+const footerNavLinks = document.querySelector(".footer-nav__links");
 
 headerMenu.addEventListener("click", function (e) {
 	// Prevent default behavior of link
@@ -14,10 +15,19 @@ headerMenu.addEventListener("click", function (e) {
 });
 
 // Implement smooth scrolling
-navLinks.addEventListener("click", function (e) {
+headerNavLinks.addEventListener("click", function (e) {
 	e.preventDefault();
 
 	if (e.target.classList.contains("nav__link")) {
+		const id = e.target.getAttribute("href");
+		document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+	}
+});
+
+footerNavLinks.addEventListener("click", function (e) {
+	e.preventDefault();
+
+	if (e.target.classList.contains("footer-nav__link")) {
 		const id = e.target.getAttribute("href");
 		document.querySelector(id).scrollIntoView({ behavior: "smooth" });
 	}
