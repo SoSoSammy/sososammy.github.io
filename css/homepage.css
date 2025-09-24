@@ -90,6 +90,10 @@
   height: auto;
 }
 
+.project__languages .rounded-badge {
+  border-radius: 25px;
+}
+
 .project__languages span {
   font-size: 14px;
   font-weight: 500;
