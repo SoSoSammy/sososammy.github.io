@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #f8edeb;
+  --primary-color: #e2f0f6;
   --secondary-color: #ffffff;
-  --accent-color: #975e5f;
-  --accent-color--hover: #8a5656;
+  --accent-color: #43798a;
+  --accent-color--hover: #145165;
 }
 
 html,
@@ -16,6 +16,7 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   background-color: var(--primary-color);
+  color: #02313e;
 }
 
 /* Important! Needed to make timeline work! */
@@ -61,7 +62,9 @@ h2 {
 .btn--secondary {
   background-color: transparent;
   color: var(--accent-color);
-  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  transition:
+    background-color 0.2s ease-in,
+    color 0.2s ease-in;
 }
 
 .btn--secondary:hover {
