@@ -5,7 +5,7 @@ export default function Projects() {
   const projects: Project[] = [
     {
       title: "Trek Mountain Bikes",
-      imageName: "images/trek-mountain-bikes-2.jpeg",
+      imageName: "gifs/trek-mountain-bikes.gif",
       technologies: ["HTML", "CSS", "JavaScript", "Figma"],
       description:
         "To create this project, I went through the steps a designer would take, such as planning a meeting agenda to discuss the client's website, budgeting the time and resources needed, and drafting a website design agreement. I then created a site map for the website, chose organization schemes, wireframed the homepage design using Figma, and coded the design with HTML, CSS, and JavaScript.",
