@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <img src={Logo} alt="Samantha V Logo" />
+        <img src={Logo} alt="Samantha V." />
         <ul>
           <li>
             <a href="#about">About</a>
