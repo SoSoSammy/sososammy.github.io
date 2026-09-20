@@ -13,7 +13,7 @@ export default function EducationItem({ education }: { education: Education }) {
       <h4>
         <span>{education.degree}</span>{" "}
         <span>
-          {education.startDate} <>&ndash;</> {education.endDate}
+          {education.startDate} &ndash; {education.endDate}
         </span>
       </h4>
       <p>{education.description}</p>

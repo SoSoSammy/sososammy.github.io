@@ -14,3 +14,11 @@ export interface Education {
   description: string;
   imageName: string;
 }
+
+export interface Experience {
+  company: string;
+  role: string;
+  startDate: string;
+  endDate: string;
+  description: string;
+}
