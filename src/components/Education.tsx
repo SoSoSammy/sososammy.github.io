@@ -25,12 +25,14 @@ export default function Education() {
   ];
 
   return (
-    <section>
-      <h2>Education</h2>
+    <section id="education">
+      <div className="md:container md:mx-auto">
+        <h2>Education</h2>
 
-      {educationList.map((education) => (
-        <EducationItem education={education} />
-      ))}
+        {educationList.map((education) => (
+          <EducationItem education={education} />
+        ))}
+      </div>
     </section>
   );
 }

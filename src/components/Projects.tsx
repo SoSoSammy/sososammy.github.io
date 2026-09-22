@@ -26,11 +26,13 @@ export default function Projects() {
     },
   ];
   return (
-    <section>
-      <h2>Projects</h2>
-      {projects.map((project) => (
-        <ProjectComponent project={project} />
-      ))}
+    <section id="projects">
+      <div className="md:container md:mx-auto">
+        <h2>Projects</h2>
+        {projects.map((project) => (
+          <ProjectComponent project={project} />
+        ))}
+      </div>
     </section>
   );
 }

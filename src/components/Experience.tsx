@@ -37,11 +37,13 @@ export default function Experience() {
     },
   ];
   return (
-    <section>
-      <h2>Experience</h2>
-      {experiences.map((experience) => (
-        <ExperienceItem experience={experience} />
-      ))}
+    <section id="experience">
+      <div className="md:container md:mx-auto">
+        <h2>Experience</h2>
+        {experiences.map((experience) => (
+          <ExperienceItem experience={experience} />
+        ))}
+      </div>
     </section>
   );
 }
