@@ -9,10 +9,12 @@ export default function SkillGroup({
 }) {
   return (
     <section>
-      <h3>{title}</h3>
-      {skills.map((skill) => (
-        <Technology technology={skill} />
-      ))}
+      <h3 className="mb-1">{title}</h3>
+      <div className="flex flex-wrap gap-2">
+        {skills.map((skill) => (
+          <Technology technology={skill} />
+        ))}
+      </div>
     </section>
   );
 }

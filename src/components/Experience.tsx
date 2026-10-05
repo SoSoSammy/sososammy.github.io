@@ -39,10 +39,15 @@ export default function Experience() {
   return (
     <section id="experience">
       <div className="md:container md:mx-auto">
-        <h2>Experience</h2>
-        {experiences.map((experience) => (
-          <ExperienceItem experience={experience} />
-        ))}
+        <div className="px-4 py-6 md:py-10 md:px-0">
+          <h2 className="text-center md:text-left mb-4">Experience</h2>
+
+          <div className="flex flex-col gap-6">
+            {experiences.map((experience) => (
+              <ExperienceItem experience={experience} />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
