@@ -15,10 +15,10 @@ export default function Header() {
   };
 
   return (
-    <header>
+    <header id="top">
       <div className="md:container md:mx-auto md:flex md:justify-between">
-        <div className="flex justify-between items-center p-2 md:px-0">
-          <a href="#" className="flex items-center">
+        <div className="flex justify-between items-center px-4 py-2 md:px-0">
+          <a href="#top" className="flex items-center">
             <img src={Logo} alt="Samantha V." className="w-60" />
           </a>
 

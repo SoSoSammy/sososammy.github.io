@@ -3,6 +3,7 @@ export interface Project {
   imageName: string;
   technologies: string[];
   description: string;
+  links?: Link[];
 }
 
 export interface Education {
@@ -21,4 +22,9 @@ export interface Experience {
   startDate: string;
   endDate: string;
   description: string;
+}
+
+export interface Link {
+  type: string;
+  url: string;
 }
