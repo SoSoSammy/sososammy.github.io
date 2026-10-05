@@ -30,7 +30,7 @@ export default function Education() {
         <div className="px-4 py-6 md:py-10 md:px-0">
           <h2 className="text-center md:text-left mb-4">Education</h2>
 
-          <div className="flex flex-col gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {educationList.map((education) => (
               <EducationItem education={education} />
             ))}
